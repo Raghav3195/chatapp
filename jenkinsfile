@@ -44,7 +44,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'curl http://34.204.81.169'
+                sh 'curl http://54.236.27.188'
             }
         }
     }
