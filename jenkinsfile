@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'slave'
+    }
 
     stages {
         stage('git pull') {
@@ -42,7 +44,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'curl http://54.87.213.186'
+                sh 'curl http://34.204.81.169'
             }
         }
     }
